@@ -1,0 +1,32 @@
+{
+    "name": "sdbruder/volt-laravel-theme",
+    "description": "Volt Bootstrap 5 Admin theme for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sdbruder\\VoltTheme\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sergio Bruder",
+            "email": "sergio@bruder.com.br"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0"
+    },
+    "extra": {
+       "laravel": {
+            "providers": [
+                "Sdbruder\\VoltTheme\\VoltThemeServiceProvider"
+            ],
+            "aliases": {
+                "VoltTheme": "Sdbruder\\VoltTheme\\Facade"
+            }
+       }
+    }
+}
