@@ -35,6 +35,10 @@ class VoltThemeServiceProvider extends ServiceProvider
             __DIR__.'/../static/vendor' => public_path('vendor'),
         ], 'volt-public');
 
+        $this->publishes([
+            __DIR__.'/../static' => public_path('static'),
+        ], 'volt-examples');
+
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'voltTheme');
     }
 
