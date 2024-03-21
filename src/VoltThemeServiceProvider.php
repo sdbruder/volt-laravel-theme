@@ -23,23 +23,24 @@ class VoltThemeServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../config/volt.php' => config_path('volt.php'),
-        ], 'volt-config');
+        ], ['volt', 'volt-config']);
 
         $this->publishes([
             __DIR__.'/../resources/views' => resource_path('views/vendor/voltTheme'),
-        ], 'volt-views');
+        ], ['volt', 'volt-views']);
 
         $this->publishes([
             __DIR__.'/../static/assets' => public_path('assets'),
             __DIR__.'/../static/css' => public_path('css'),
             __DIR__.'/../static/vendor' => public_path('vendor'),
-        ], 'volt-public');
+        ], ['volt', 'volt-public']);
 
         $this->publishes([
             __DIR__.'/../static' => public_path('static'),
-        ], 'volt-examples');
+        ], ['volt', 'volt-examples']);
 
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'voltTheme');
+
     }
 
 }
