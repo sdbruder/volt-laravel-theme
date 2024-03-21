@@ -12,7 +12,7 @@ class VoltThemeServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->mergeConfigFrom(
-            __DIR__.'/../config/volt.php', 'courier'
+            __DIR__.'/../config/volt.php', 'volt'
         );
     }
 

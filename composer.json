@@ -18,15 +18,5 @@
     "require": {
         "php": "^8.2",
         "laravel/framework": "^11.0"
-    },
-    "extra": {
-       "laravel": {
-            "providers": [
-                "Sdbruder\\VoltTheme\\VoltThemeServiceProvider"
-            ],
-            "aliases": {
-                "VoltTheme": "Sdbruder\\VoltTheme\\Facade"
-            }
-       }
     }
 }
